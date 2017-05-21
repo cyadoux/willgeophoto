@@ -1,0 +1,100 @@
+// base.scss
+
+@import 'fonts';
+@import 'normalize';
+
+/* BASE */
+html {
+	font-size: 1.125em;
+	}
+
+body {
+	margin: 1em;
+
+	background-color: white;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	line-height: 1.45;
+	color: #333;
+	}
+
+/* TYPE */
+
+h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-top: 0;
+	margin-left: 16px;
+	}
+
+p {
+	margin-bottom: 1.3em;
+	margin-top: 0;
+	}
+
+.light {
+	color: #ddd;
+	}
+
+a {
+	color: #777;
+	text-decoration: none;
+}
+
+/* LAYOUT */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 96%;
+	padding-top: 1em;
+	}
+
+.monogram {
+	height: 80px;
+	vertical-align: baseline;
+	}
+
+main {
+	margin-top: 132px;
+	}
+
+.gallery {
+	margin-top: 132px;
+	width: 55900px;
+	}
+
+.gallery ul {
+    list-style-type: none;
+    display: flex;
+
+    padding: 0;
+  
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-start;
+	}
+
+.gallery ul li {
+	padding-right: 16px;
+	}
+
+img {
+	max-height: 500px;
+	width: auto;
+	}
+
+
+.logo {
+	display: flex;
+	}
+
+section {
+	display: flex;
+	align-items: flex-start;
+	}
+
+section img {
+	margin: 0 1em;
+}

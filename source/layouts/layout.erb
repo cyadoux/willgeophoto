@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Use the title from a page's frontmatter if it has one -->
+	<title><%= current_page.data.title || "Will George Photography" %></title>
+	<%= stylesheet_link_tag "index" %>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img class="monogram" src="../images/monogram.png">
+			<h1>William S. George<br>
+				<span class="light">Photography</span>
+			</h1>
+		</div>
+		<nav>
+			<%= partial "nav" %>
+		</nav>
+	</header>
+	<main>
+		<%= yield %>
+	</main>
+	<footer>
+		<%= partial "footer" %>
+	</footer>
+	<%= javascript_include_tag "blazy.min" %>
+	<%= javascript_include_tag "hscroll" %>
+	<%= javascript_include_tag "index" %>
+	<script>
+		window.onload = function() {
+			var bLazy = new Blazy();
+			HtinyScrolling.init();
+			scrollTips.init();
+		}
+	</script>
+</body>
+</html>
