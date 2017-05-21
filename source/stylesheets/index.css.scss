@@ -1,9 +1,13 @@
 // base.scss
 
+// IMPORTS
 @import 'fonts';
 @import 'normalize';
 
-/* BASE */
+// SETTINGS
+$font-stack: "Source Sans Pro", sans-serif;
+
+// BASE
 html {
 	font-size: 1.125em;
 	}
@@ -12,14 +16,14 @@ body {
 	margin: 1em;
 
 	background-color: white;
-	font-family: "Source Sans Pro";
+	font-family: $font-stack;
 	font-weight: 400;
 	line-height: 1.45;
 	color: #333;
 	}
 
-/* TYPE */
 
+// TYPE
 h1 {
 	font-size: 1.5em;
 	font-weight: normal;
@@ -39,9 +43,9 @@ p {
 a {
 	color: #777;
 	text-decoration: none;
-}
+	}
 
-/* LAYOUT */
+// LAYOUT
 header {
 	display: flex;
 	justify-content: space-between;
@@ -97,4 +101,4 @@ section {
 
 section img {
 	margin: 0 1em;
-}
+	}

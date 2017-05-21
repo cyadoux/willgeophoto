@@ -11,15 +11,7 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
-			<img class="monogram" src="../images/monogram.png">
-			<h1>William S. George<br>
-				<span class="light">Photography</span>
-			</h1>
-		</div>
-		<nav>
-			<%= partial "nav" %>
-		</nav>
+		<%= partial "header" %>
 	</header>
 	<main>
 		<%= yield %>
@@ -27,7 +19,7 @@
 	<footer>
 		<%= partial "footer" %>
 	</footer>
-	<%= javascript_include_tag "blazy.min" %>
+	<%= javascript_include_tag "blazy" %>
 	<%= javascript_include_tag "hscroll" %>
 	<%= javascript_include_tag "index" %>
 	<script>
